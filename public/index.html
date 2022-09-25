@@ -49,7 +49,7 @@
 
         const button = document.getElementById('google_signout');
         button.onclick = () =>{
-            console.log(google.accounts.id);
+            //console.log(google.accounts.id);
             google.accounts.id.disableAutoSelect();
 
             google.accounts.id.revoke(localStorage.getItem('email'), done =>{
